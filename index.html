@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Web Ini </title> 
+    <link href="https: //fonts.googleapis.com/css2? family= Noto+Sans:ital,wght@1,500 & display=swap" rel="stylesheet"></link>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <h1>Ini-Parameters SQL DataBase</h1>
+    <nav>
+       <ul>
+         <li><a href="">Menu</a></li>
+         <li><a href="">Info.</a></li>
+         <li><a href="">SQL Web</a></li>
+         <li><a href="">Otros</a></li>
+       </ul>
+    </nav>
+    <div class="contenido">
+        <div class="articulos">
+          <div class="secciones">
+            <div>
+                <h2>Parametros a tener en cuenta</h2>
+                <p>Los parámetros con valores de tabla (TVP), al igual que otros parámetros, deben enlazarse antes de que se pasen al servidor. La aplicación enlaza parámetros con valores de tabla de la misma manera que enlaza otros parámetros: mediante SQLBindParameter o llamadas equivalentes a SQLSetDescField o SQLSetDescRec. El tipo de datos del servidor para un parámetro con valores de tabla es SQL_SS_TABLE. El tipo de C puede especificarse como SQL_C_DEFAULT o SQL_C_BINARY.
+                    En SQL Server 2008 o posterior, solo se admiten parámetros con valores de tabla de entrada. Por lo tanto, cualquier intento de establecer SQL_DESC_PARAMETER_TYPE en un valor distinto de SQL_PARAM_INPUT devuelve SQL_ERROR con SQLSTATE = HY105 y el mensaje "Tipo de parámetro no válido".
+                    Es posible asignar valores predeterminados a columnas completas de parámetros con valores de tabla mediante el atributo SQL_CA_SS_COL_HAS_DEFAULT_VALUE. Sin embargo, los valores de columna de parámetros con valores de tabla individuales no se pueden asignar valores predeterminados mediante SQL_DEFAULT_PARAM en StrLen_or_IndPtr con SQLBindParameter. Los parámetros con valores de tabla en su conjunto no se pueden establecer en un valor predeterminado mediante SQL_DEFAULT_PARAM en StrLen_or_IndPtr con SQLBindParameter. Si no se siguen estas reglas, SQLExecute o SQLExecDirect devuelve SQL_ERROR. Se genera un registro de diagnóstico con SQLSTATE=07S01 y el mensaje "Uso no válido del parámetro predeterminado para el parámetro p", donde p es el ordinal del TVP en la instrucción de consulta.
+                    Al tirar el propio director un SQL_ERROR se genera un exabrupto en el primer QUERY que a su vez afecto al resto, por lo cual es importante no obviar este detalle. </p>
+            </div>
+            <div><img src="img/glossary-illustration-1-dist-sql.png"></div>
+          </div>
+          <div class="secciones">
+            <div>
+                <h2>Texto a rellenar</h2>
+                <p>Texto a rellenar</p>
+            </div>
+            <div><img src=""></div>
+          </div>
+          <div class="secciones">
+            <div>
+                <h2>Texto a rellenar</h2>
+                <p>Texto a rellenar </p>
+            </div>
+            <div><img src=""></div>
+          </div>
+          <div class="secciones">
+            <div>
+                <h2>Texto a rellenar</h2>
+                <p>Texto a rellenar</p>
+            </div>
+            <div><img src=""></div>
+          </div>
+          <div class="secciones">
+            <div>
+                <h2>Texto a rellenar</h2>
+                <p>Texto a rellenar</p>
+            </div>
+            <div><img src=""></div>
+          </div>
+        </div>
+        <div class="menu-secundario">
+            <a href="">Articulos 1</a>
+            <a href="">Articulos 2</a>
+            <a href="">Articulos 3</a>
+            <a href="">Articulos 4</a>
+            <a href="">Articulos 5</a>
+            <a href="">Articulos 6</a>
+            <a href="">Articulos 7</a>
+        </div>
+    </div>
+    <footer>
+        <p>Los parámetros de la interfaz de usuario comienzan con las letras UI e indican si su palabra clave de configuración asociada se encuentra disponible a través de la interfaz de usuario de ArcGIS y ArcObjects. UI_TEXT se utiliza para palabras clave de configuración no compuestas UI_TOPOLOGY_TEXT se utiliza para palabras clave de configuración de topología. UI_TERRAIN_TEXT se utiliza para palabras clave de configuración de terreno. UI_NETWORK_TEXT se utiliza para palabras clave de configuración de redes. Las palabras clave de configuración predeterminadas que necesitan parámetros de la interfaz de usuario ya los incorporan. 
+            Solo tendría que agregar uno de estos parámetros si crea sus propias palabras clave personalizadas.
+            Proximamente se añadiran nuevos referencias para los parametros indicados en SQLTools.</p> 
+    </footer>
+
+</body>
+</html>
